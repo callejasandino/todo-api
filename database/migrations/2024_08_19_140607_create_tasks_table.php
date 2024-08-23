@@ -21,7 +21,7 @@ return new class () extends Migration {
             $table->integer('task_order');
             $table->timestamp('date_completed')->nullable();
             $table->boolean('is_archived')->default(0);
-            $table->timestamp('archievd_date')->nullable();
+            $table->timestamp('archived_date')->nullable();
             $table->timestamps();
             $table->softDeletes();
         });
