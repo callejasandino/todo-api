@@ -12,6 +12,8 @@ class AuthService
 {
     public static function login(LoginRequest $request)
     {
+        //process for logging in to the platform
+
         $user = User::where('email', $request->input('email'))->first();
 
         if(!$user) {
